@@ -3,6 +3,35 @@
 }
 
 .box {
-  border: 1px solid black;
-  height: 150px;
+  border: 4px dotted green;
+  height: 180px;
+
+}
+
+h1 {
+  color:red;
+}
+
+body {
+  background-color: grey;
+}
+
+.btn {
+  margin-top: 20px;
+  height:75px;
+  width:200px;
+}
+
+body {
+  background-image: srTyrone Biggums BIO.png
+}
+
+.animate {
+
+	border-radius: 50%;
+	padding: 0;
+	width:200px;
+	height:200px;
+	margin: 50px;
+	text-align:center;
 }
