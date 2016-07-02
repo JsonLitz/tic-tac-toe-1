@@ -23,7 +23,8 @@ body {
 }
 
 body {
-  background-image: srTyrone Biggums BIO.png
+  /*background-image: Tyrone Biggums BIO.png*/
+
 }
 
 .animate {
@@ -34,4 +35,14 @@ body {
 	height:200px;
 	margin: 50px;
 	text-align:center;
+}
+
+.img {
+  height:75%;
+  width:75%;
+  padding: 20px;
+}
+
+.red {
+  background-color:red;
 }
