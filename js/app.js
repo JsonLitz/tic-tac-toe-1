@@ -2,22 +2,64 @@
           // wait for the DOM to finish loading
 $(document).ready(function() {
 
-      var board = 0;
-      $('.row').find('.box').click(
-        function() {
-          if (board % 2 === 0) {
-            $(this).prepend('<img class="img X" src="images/oscarO.png" />');
 
-          } else {
-            $(this).prepend('<img class="img O" src="images/xhibit.png" />');
+// ============================================================================================================
+// INSIDE THIS IS WHERE STUFF STILL WORKS
+      // var board = 0;
+      // $('.row').find('.box').click(function() {
+      //     if (board % 2 === 0) {
+      //       $(this).prepend('<img class="img X" src="images/oscarO.png" />');
+      //
+      //     } else {
+      //       $(this).prepend('<img class="img O" src="images/xhibit.png" />');
+      //
+      //     }
+      //     board++;
+      //
+      //     var space = $(this).val();
+      //     console.log("code is working !")
+      //
+      //   });
+      //
 
-          }
-          board++;
 
-          var space = $(this).val();
-          console.log("code is working !")
+      //BELOW THIS IS WHERE FUNCTIONS ARE TESTED
+// ============================================================================================================
+//
+// $('.row').find('.box').click(function() {
+//   if ($(this).hasClass('O X')) {
+//     return false;
+//   }
+// });
+var board = 0;
+$('.row').find('.box').click(function() {
+      if ($(this).hasClass('O')||$(this).hasClass('X'))   {
+        return false;
+      }
+  if (board % 2 === 0) {
+    $(this).addClass('X');
 
-        });
+  } else {
+    $(this).addClass('O');
+
+  }
+  board++;
+
+  // var space = $(this).val();
+
+  console.log("code is working !")
+
+});
+
+/
+
+// $('.row').
+// function checkWin () {
+//   if $('.row').
+//
+// }
+//
+//
 
 
         // $('box').click( function check(e){
@@ -36,6 +78,16 @@ $(document).ready(function() {
           //     .prevent
           // });
 
+          //
+          // $(document).ready(function(){
+          //   console.log("Let's get coding!")
+          //   $('input').on("click", function pick(e){
+          //     var rgb = $(this).val()
+          //   });
+          //   $('td').on("mouseenter", function paint(e){
+          //     $(this).css('background-color', $('input').val())
+          //   });
+          // })
 
 
 
@@ -43,16 +95,6 @@ $(document).ready(function() {
 
 
 
-  //
-  // $(document).ready(function(){
-  //   console.log("Let's get coding!")
-  //   $('input').on("click", function pick(e){
-  //     var rgb = $(this).val()
-  //   });
-  //   $('td').on("mouseenter", function paint(e){
-  //     $(this).css('background-color', $('input').val())
-  //   });
-  // })
 
 
 

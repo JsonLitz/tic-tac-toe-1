@@ -1,66 +1,68 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
 
-    <!-- set viewport to device width to allow responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
 
-    <!-- Bootstrap CSS from CDN -->
+  <!-- set viewport to device width to allow responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+  <!-- Bootstrap CSS from CDN -->
 
-
-    <!-- link to custom stylesheet (always require after Bootstrap) -->
-
-    <!-- jQuery from CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 
 
-    <!-- link to custom javascript file (always require after external JS libraries) -->
+  <!-- link to custom stylesheet (always require after Bootstrap) -->
 
-    <title>Tic Tac Toe</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="row text-center">
-        <div class="col-md-12">
-          <h1>Tic Tac Toe</h1>
-          <hr>
-        </div>
-      </div>
-      <div class="row">
-        <!-- a column represents our game board -->
-        <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
-          <!-- <img src="images/tyrone_dancing.gif"> -->
+  <!-- jQuery from CDN -->
 
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
-          <div class="row">
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-          </div>
 
-<button type="button" class="btn btn-primary btn-lg active">Reset</button>
-        </div>
+  <!-- link to custom javascript file (always require after external JS libraries) -->
+
+  <title>Tic Tac Toe</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h1>Tic Tac Toe</h1>
+        <hr>
       </div>
     </div>
+    <div class="row">
+      <!-- a column represents our game board -->
+      <!-- the `offset` class helps us center the board -->
+      <div class="col-md-6 col-md-offset-3" id="board">
+        <!-- <img src="images/tyrone_dancing.gif"> -->
+
+        <!-- you can put rows inside of columns! -->
+        <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+        <div class="row">
+          <div class="col-md-4 box one"></div>
+          <div class="col-md-4 box two"></div>
+          <div class="col-md-4 box three"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 box four"></div>
+          <div class="col-md-4 box five"></div>
+          <div class="col-md-4 box six"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 box seven"></div>
+          <div class="col-md-4 box eight"></div>
+          <div class="col-md-4 box nine"></div>
+        </div>
+
+        <button type="button" class="btn btn-primary btn-lg active">Reset</button>
+      </div>
+    </div>
+  </div>
 
 
-  </body>
+</body>
 
-  </html>
+</html>
