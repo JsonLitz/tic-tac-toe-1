@@ -37,7 +37,10 @@ $('.row').find('.box').click(function() {
         return false;
       }
   if (board % 2 === 0) {
+    $(this).val('x');
     $(this).addClass('X');
+
+
 
   } else {
     $(this).addClass('O');
@@ -45,21 +48,81 @@ $('.row').find('.box').click(function() {
   }
   board++;
 
-  // var space = $(this).val();
-
   console.log("code is working !")
+
+  // function that checks if X is the winner
+   if ($('.one').val() === 'x' && $('.two').val() === 'x' &&  $('.three').val() === 'x') {
+    alert('yo');
+  
+
+   else if ($('.four').val() === 'x' && $('.five').val() === 'x' &&  $('.six').val() === 'x') {
+    alert('yo');
+  };
+  else if ($('.seven').val() === 'x' && $('.eight').val() === 'x' &&  $('.nine').val() === 'x') {
+    alert('yo');
+  };
+  else if ($('.one').val() === 'x' && $('.four').val() === 'x' &&  $('.seven').val() === 'x') {
+    alert('yo');
+  };
+  else if ($('.two').val() === 'x' && $('.five').val() === 'x' &&  $('.eight').val() === 'x') {
+    alert('yo');
+  };
+  else if ($('.three').val() === 'x' && $('.six').val() === 'x' &&  $('.nine').val() === 'x') {
+    alert('yo');
+  };
+  else if ($('.one').val() === 'x' && $('.five').val() === 'x' &&  $('.nine').val() === 'x') {
+    alert('yo');
+  };
+  else if ($('.three').val() === 'x' && $('.five').val() === 'x' &&  $('.seven').val() === 'x') {
+    alert('yo');
+  };
+  //function that checks if O is the winner
+  else if ($('.one').val() === 'o' && $('.two').val() === 'o' &&  $('.three').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.four').val() === 'o' && $('.five').val() === 'o' &&  $('.six').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.seven').val() === 'o' && $('.eight').val() === 'o' &&  $('.nine').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.one').val() === 'o' && $('.four').val() === 'o' &&  $('.seven').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.two').val() === 'o' && $('.five').val() === 'o' &&  $('.eight').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.three').val() === 'o' && $('.six').val() === 'o' &&  $('.nine').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.one').val() === 'o' && $('.five').val() === 'o' &&  $('.nine').val() === 'o') {
+   alert('yo');
+ };
+ else if ($('.three').val() === 'o' && $('.five').val() === 'o' &&  $('.seven').val() === 'o') {
+   alert('yo');
+ };
+
+
+
+
 
 });
 
-/
+// $('.btn').click(function(){
+//         $('#board')[0].reset();
+//   });
 
-// $('.row').
+//function that alerts players once all spaces have been filled
+
+
 // function checkWin () {
-//   if $('.row').
+//   if ( )
+//
+//
 //
 // }
-//
-//
+
+
 
 
         // $('box').click( function check(e){
