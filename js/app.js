@@ -25,87 +25,62 @@ $(document).ready(function() {
 
       //BELOW THIS IS WHERE FUNCTIONS ARE TESTED
 // ============================================================================================================
-//
-// $('.row').find('.box').click(function() {
-//   if ($(this).hasClass('O X')) {
-//     return false;
-//   }
-// });
+
 var board = 0;
-$('.row').find('.box').click(function() {
-      if ($(this).hasClass('O')||$(this).hasClass('X'))   {
-        return false;
-      }
-  if (board % 2 === 0) {
-    $(this).val('x');
-    $(this).addClass('X');
+   $('.row').find('.box').click(function() {
+         if ($(this).hasClass('O') || $(this).hasClass('X')) {
+           return false;
+         }
+         if (board % 2 === 0) {
+           $(this).val('x');
+           $(this).addClass('X');
+
+         } else {
+           $(this).addClass('O');
+           $(this).val('o');
+
+         }
+         board++;
 
 
-
-  } else {
-    $(this).addClass('O');
-
-  }
-  board++;
-
-  console.log("code is working !")
+  // console.log("code is working !")
 
   // function that checks if X is the winner
-   if ($('.one').val() === 'x' && $('.two').val() === 'x' &&  $('.three').val() === 'x') {
-    alert('yo');
-  
-
-   else if ($('.four').val() === 'x' && $('.five').val() === 'x' &&  $('.six').val() === 'x') {
-    alert('yo');
-  };
-  else if ($('.seven').val() === 'x' && $('.eight').val() === 'x' &&  $('.nine').val() === 'x') {
-    alert('yo');
-  };
-  else if ($('.one').val() === 'x' && $('.four').val() === 'x' &&  $('.seven').val() === 'x') {
-    alert('yo');
-  };
-  else if ($('.two').val() === 'x' && $('.five').val() === 'x' &&  $('.eight').val() === 'x') {
-    alert('yo');
-  };
-  else if ($('.three').val() === 'x' && $('.six').val() === 'x' &&  $('.nine').val() === 'x') {
-    alert('yo');
-  };
-  else if ($('.one').val() === 'x' && $('.five').val() === 'x' &&  $('.nine').val() === 'x') {
-    alert('yo');
-  };
-  else if ($('.three').val() === 'x' && $('.five').val() === 'x' &&  $('.seven').val() === 'x') {
-    alert('yo');
-  };
-  //function that checks if O is the winner
-  else if ($('.one').val() === 'o' && $('.two').val() === 'o' &&  $('.three').val() === 'o') {
-   alert('yo');
- };
- else if ($('.four').val() === 'o' && $('.five').val() === 'o' &&  $('.six').val() === 'o') {
-   alert('yo');
- };
- else if ($('.seven').val() === 'o' && $('.eight').val() === 'o' &&  $('.nine').val() === 'o') {
-   alert('yo');
- };
- else if ($('.one').val() === 'o' && $('.four').val() === 'o' &&  $('.seven').val() === 'o') {
-   alert('yo');
- };
- else if ($('.two').val() === 'o' && $('.five').val() === 'o' &&  $('.eight').val() === 'o') {
-   alert('yo');
- };
- else if ($('.three').val() === 'o' && $('.six').val() === 'o' &&  $('.nine').val() === 'o') {
-   alert('yo');
- };
- else if ($('.one').val() === 'o' && $('.five').val() === 'o' &&  $('.nine').val() === 'o') {
-   alert('yo');
- };
- else if ($('.three').val() === 'o' && $('.five').val() === 'o' &&  $('.seven').val() === 'o') {
-   alert('yo');
- };
-
-
-
-
-
+  if ($('.one').val() === 'x' && $('.two').val() === 'x' && $('.three').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.four').val() === 'x' && $('.five').val() === 'x' && $('.six').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.seven').val() === 'x' && $('.eight').val() === 'x' && $('.nine').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.one').val() === 'x' && $('.four').val() === 'x' && $('.seven').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.two').val() === 'x' && $('.five').val() === 'x' && $('.eight').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.three').val() === 'x' && $('.six').val() === 'x' && $('.nine').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.one').val() === 'x' && $('.five').val() === 'x' && $('.nine').val() === 'x') {
+       alert('X Wins!');
+     } else if ($('.three').val() === 'x' && $('.five').val() === 'x' && $('.seven').val() === 'x') {
+       alert('X Wins!');
+     }
+     //function that checks if O is the winner
+     else if ($('.one').val() === 'o' && $('.two').val() === 'o' && $('.three').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.four').val() === 'o' && $('.five').val() === 'o' && $('.six').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.seven').val() === 'o' && $('.eight').val() === 'o' && $('.nine').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.one').val() === 'o' && $('.four').val() === 'o' && $('.seven').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.two').val() === 'o' && $('.five').val() === 'o' && $('.eight').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.three').val() === 'o' && $('.six').val() === 'o' && $('.nine').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.one').val() === 'o' && $('.five').val() === 'o' && $('.nine').val() === 'o') {
+       alert('O Wins!');
+     } else if ($('.three').val() === 'o' && $('.five').val() === 'o' && $('.seven').val() === 'o') {
+       alert('O Wins!');
+     }
 });
 
 // $('.btn').click(function(){
